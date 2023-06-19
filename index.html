@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>リアキャスター</title>
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <link href="./style.css" rel="stylesheet">
+</head>
+
+<body>
+  <header id="header">
+    <span class="title">リアキャスター</span>
+    <span>
+      <span id="settingButton"><i class="fas fa-cog"></i></span>
+      <span id="closeButton">×</span>
+    </span>
+  </header>
+  <div class="msgbox"> </div>
+  <div id="settingModal">
+    <p>チャンネル名を入力してください</p>
+    <div>
+      <span class="sharp">#</span><input type="text" id="channelInput" value=""/>
+    </div>
+    <div class="button-area">
+      <button type="button" id="cancelButton">キャンセル</button>
+      <button type="button" id="execButton">決定</button>
+    </div>
+  </div>
+  <script src="./renderer.js"></script>
+</body>
+
+</html>

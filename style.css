@@ -1,0 +1,113 @@
+html {
+    margin: 2px;
+    height: calc(100% - (2px * 2));
+    width:  calc(100% - (2px * 2));
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    overflow: hidden;
+    border: 5px solid rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+header {
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 20px;
+    box-sizing: border-box;
+    -webkit-app-region: drag;
+}
+
+header #closeButton {
+    font-size: 24px;
+    cursor: pointer;
+    -webkit-app-region: no-drag;
+}
+
+header #settingButton {
+    font-size: 20px;
+    cursor: pointer;
+    -webkit-app-region: no-drag;
+}
+
+.msgbox {
+    font-size: 80px;
+    height: 100%;
+    width: 100%;
+}
+
+.layer {
+    position: relative;
+    width: 100%;
+    height: 120px;
+    margin: 8px 0;
+}
+
+.msg {
+    position: absolute;
+    display: none;
+    right: 0;
+    white-space: nowrap;
+    font-weight: 700;
+}
+
+#settingModal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 2px solid #333;
+}
+
+#settingModal div, #settingModal p {
+    margin: 5px 0;
+}
+
+#channelInput {
+    padding: 5px 5px 5px 20px;
+    box-sizing: border-box;
+}
+
+.sharp {
+    position: absolute;
+    top: 62px;
+    left: 56px;
+    z-index: 2;
+    color: #555;
+}
+
+.button-area button {
+    margin: 0 5px;
+    padding: 3px 8px;
+    box-sizing: border-box;
+    border: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#execButton {
+    color: #fff;
+    background-color: #007bff;
+}
+#cancelButton {
+    color: #fff;
+    background-color: #6c757d;
+}
