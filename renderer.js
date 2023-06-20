@@ -4,7 +4,7 @@ const io = require('socket.io-client');
 const config = require('electron-node-config');
 
 // socket.io
-const socket = io.connect(config.socket_url);
+const socket = io.connect(config.socket_url, {resource: config.socket_path});
 
 // マウスイベント処理
 document.querySelector('.msgbox').addEventListener('mouseenter', e => {
@@ -103,8 +103,8 @@ $('#execButton').on('click', () => {
   changeReceiveChannel();
   $modal.hide();
 });
-$('#channelInput').on('keypress', () => {
-  if (e.which == 13) {
+$('#channelInput').on('keypress', e => {
+  if (e.key == 'Enter') {
     changeReceiveChannel();
     $modal.hide();
   }

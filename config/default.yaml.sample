@@ -1,1 +1,2 @@
 socket_url: "http://localhost"
+socket_path: "socket"
